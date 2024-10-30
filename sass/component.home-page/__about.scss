@@ -1,0 +1,122 @@
+.main-about{
+    text-align: center;
+    padding: 20px;
+
+    .h2-about{
+        font-family: "ADLaM Display", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 6vh;
+        position: relative;
+        margin-bottom: 0;
+        margin: 0 auto;
+        padding-bottom: 0;
+        cursor: pointer;
+        padding: 0 10px;
+        width: max-content;
+    }
+
+
+}
+.main-about .h2-about:after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 98%;
+    left: 0;
+    background-color: #F3A01A;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+.main-about .h2-about:hover:after{
+    transform: scaleX(1);
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+.info-left{
+
+    margin-top: 20px;
+    background-color: #F3A01A;
+    width: 800px;
+    padding: 0px 10px 10px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    p{
+        font-size: 4vh;
+    }
+
+
+}
+.info-left:hover{
+    transform: translateY(-5px);
+
+} 
+.logo-right img{
+    margin-top: 20px;
+    width: 300px;
+    transition: 0.5s;
+    cursor: pointer;
+
+
+}
+.logo-right img:hover{
+    transform: translateY(-5px);
+
+} 
+
+// Responsive for tablet---->
+
+@media(min-width:769px) and (max-width:1024px){
+
+    .about-content{
+        flex-direction: row-reverse;
+        background-color: #F3A01A;
+        width: 95%;
+        border-radius: 10px;
+        padding: 20px;
+
+
+    }
+    .info-left{
+        background-color: none;
+        margin-left: 50px;
+        width: 600px;
+        h2{
+            font-size: 7vh;
+            margin-top: 0;
+            margin-right: 50px;
+        }
+
+        p{
+            text-align: start;
+            font-size: 5vh;
+        }
+    }
+    .logo-right img{
+        width: 270px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}  
+
+// For tablet screen
+@media(min-width:481px) and (max-width:768px) {
+    .main-about{
+        width: 100%;
+
+        .h2-about{
+            text-align: center;
+            margin: 0 auto;
+        }
+
+    }
+
+}    
