@@ -1,0 +1,183 @@
+@import"_mixin-group";
+
+
+body{
+    margin: 0 auto;
+}
+
+nav{
+    background-color: $bg-color-black;
+    display: flex;
+    position: fixed;
+    z-index: 38;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.navbar1{
+    flex: 0.25;
+    background-color: $bg-color-orange;
+    text-align: $text-align;
+}
+
+img{
+    width: 100px;
+    margin: 10px;
+    background-color:$bg-color-white;
+    border-radius: 50%;
+}
+
+
+.navbar2{
+    text-align:$text-align;
+    flex: 2;
+}
+
+.list{
+    list-style: none;
+    width: 260px;
+    margin: 20px auto;
+    @include text-centered;
+    padding-right: 70px;
+    margin-top:  10px auto;
+
+}
+
+a:hover{
+    color: $bg-color-orange;
+    position: relative;
+}
+
+a{
+    color: $bg-color-white;
+    font-size: x-large;
+    font-family: $font-text;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+.search{
+    display: flex;
+    background-color: $bg-color-white;
+    width: 450px;
+    height: 40px;
+    margin: 20px auto;
+
+}
+
+
+.search input[type=search]{
+    width: 70%;
+    border: $border-none;
+
+}
+
+button{
+    background-color: $bg-color-orange;
+    width: 30%;
+    border: $border-none;
+    cursor: pointer;
+
+}
+
+// button:hover{
+//     color: $bg-color-white;
+    
+// }
+
+
+
+.navbar3{
+    flex: 0.25;
+    @include text-centered;
+    align-items: $text-align;
+}
+
+.card{
+    background-color: $bg-color-white;
+    @include with-height;
+    border-radius: $b-r;
+    text-align: text-align;
+
+}
+
+
+// ====================================> Responsive Tablet
+
+
+
+@media(min-width: 768px) and (max-width: 1024px){
+    .navbar3{
+        display: none;
+    }
+
+    .navbar2{
+        text-align:$text-align;
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .list{
+        list-style: none;
+        width: 260px;
+        margin: 20px auto;
+        @include text-centered;
+        padding-right: 70px;
+        margin-top:  10px auto;
+    
+    }
+    
+    a{
+        color: $bg-color-white;
+        font-size: x-large;
+        font-family: $font-text;
+        margin: 0px 20px;
+        text-decoration: none;
+    }
+    
+    .search{
+        flex: 2;
+        background-color: $bg-color-white;
+        width: 200px;
+        height: 40px;
+        margin: 40px;
+    }
+    
+    .list a{
+        border: 0px solid $bg-color-orange;
+        padding: 11.5px 16px;
+        transition: 0.5s;
+
+    }
+    
+    .list a:hover{
+        background-color: orange;
+        color: $bg-color-black;
+    }
+    
+    nav{
+        height: 90px;
+    }
+
+    img{
+        width: 80px;
+        margin: 5px;
+        background-color:$bg-color-white;
+        border-radius: 50%;
+    }
+    
+
+}

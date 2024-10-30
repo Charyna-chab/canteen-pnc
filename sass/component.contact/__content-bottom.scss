@@ -1,0 +1,111 @@
+@import"_mixin-group";
+
+
+
+.content-bottom{
+    background-color: $bg-color-black;
+    color: $bg-color-white;
+    padding-top: 30px;
+
+}
+
+.input{
+    display: $flex-item;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+input[type=text],
+input[type=password],
+input[type=email]{
+    
+    width: 48%;
+    height: 40px;
+    border: $border-none;
+    background-color: $bg-color-input;
+
+    margin-top: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.input-text{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-left: 16px;
+    font-family: sans-serif;
+}
+
+.span{
+    text-align: $text-align;
+    font-family: $font-text;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+input[type=text-fb]{
+    background-color:  $bg-color-input;
+    @include fw-br;
+    height: 80px;
+    border: $border-none;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+}
+
+
+input[type=submit]{
+    @include fw-br;
+    height: 40px;
+    border: $border-none;
+    background-color: $bg-color-white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+
+
+@media(min-width: 768px) and (max-width: 1024px){
+    
+
+    input[type=text],
+    input[type=password],
+    input[type=email]{
+        
+        width: 98%;
+        height: 40px;
+        border: $border-none;
+        background-color: $bg-color-input;
+
+        margin-top: 5px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    #Sure-name{
+        display: none;
+    }
+    
+    #Email{
+        width: 98%;
+        
+    }
+
+    #Password{
+        width: 98%;
+        margin-top: 30px;
+    }
+    
+    #id{
+        width: 48%;
+        
+    }
+
+    #class{
+        width: 48%;
+    }
+}
