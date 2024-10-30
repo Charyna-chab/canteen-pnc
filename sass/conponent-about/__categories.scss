@@ -1,0 +1,74 @@
+.categories{
+    margin-top: 5%;
+    margin-left: 15%;
+    text-align: center;
+    background-color: $bg-card-and-cartgories;
+    width: 70%;
+    height: 35vh;
+    border-radius: 20px;
+
+    h2{
+        color: $text-button;
+        padding: 20px;
+        font-size: 40px;
+        font-weight: bold;
+
+    }
+}
+.categories-2{
+    display: flex;
+    justify-content: space-evenly;
+
+    img{
+        width: 80%;
+        height: 9vh;
+        padding: 10px;
+        outline: 1px solid $bg-color-and-outline;
+        border-radius:50%;
+        transition: transform 0.5s;
+
+    }
+    img:hover{
+        background-color: $bg-color;
+        transform:scale(1.1);
+    }
+    
+    p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+@media(min-width:768px) and (max-width:1024px){
+    .categories-2{
+        img{
+            width: 50%;
+            height: 7vh;
+        }
+
+        p{
+            font-size: 15px;
+        }
+
+       
+    }
+    .categories{
+        background-color: $bg-color;
+
+        h2{
+            font-size: 30px;
+        }
+    }
+    .food{
+        width: 12%;
+        height: 20vh;
+        padding: 5px;
+        border-radius: 10px;
+        outline: 1px solid $bg-color-and-outline;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+}
+// @media(min-width:480px){
+//     .categories{
+//         margin-top:-5%;
+//     }
+// }

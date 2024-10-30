@@ -1,0 +1,86 @@
+.drink{
+    width: 100%;
+    height: 55vh;
+    margin-top: 20px;
+    background-color: $bg-drink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-drink{
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 30vh;
+    padding:  0 20px;
+    border-radius: 100px;
+    background-color:$bg-color-and-outline ;
+
+}
+
+
+.type-drink img{
+    width: 100%;
+    height: 25vh;
+    border-radius: 100%;
+    margin-top: 15px;
+    transition: transform 0.7s;
+
+}
+
+.type-drink img:hover{
+    transform: scale(0.9);
+    padding: 5px;
+    outline: 2px solid white;
+}
+ 
+
+.card-drink{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color:$text-color;
+
+    
+
+}
+.meaning-drink{
+    width: 50%;
+
+}
+.meaning-drink button{
+    color: red;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    border: none;
+    width: 40%;
+    border-radius: 30px;
+    background-color:$bg-dessert;
+}
+
+@media(min-width:768px) and (max-width:1024px){
+        .img-drink{
+        background: none;
+    }
+    
+    
+
+    .meaning-drink{
+        display: none;
+
+       
+    }
+    .img-drink{
+        display: flex;
+        justify-content: space-between;
+    }
+    .type-drink img{
+        outline: 5px solid $bg-color-and-outline;
+
+    }
+   
+}

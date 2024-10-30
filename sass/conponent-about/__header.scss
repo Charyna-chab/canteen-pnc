@@ -1,0 +1,86 @@
+header{
+    background-image: url(/images/about/bg.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    // background-position: center;
+    // background-attachment: fixed;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+
+    
+}
+
+.header-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    // background-color: rgba(0,0,0,0.7);
+   
+
+}
+
+.header-left{
+    width: 100%;
+
+
+    h1{
+        color: $text-color;
+        font-size: 100px;
+        margin: 0% 10%;
+    }
+    
+    .btn{
+        text-align: center;
+        width: 20%;
+        margin:0 20%;
+        border: none;
+        padding: 20px;
+        font-size: 30px;
+        color: $text-button;
+        font-weight: bold;
+        border-radius: 50px;
+        background-color: $bg-color;
+
+    }
+    .btn:hover{
+        color: $text-color;
+        background-color: $text-button;
+    }
+    
+}
+
+@media(min-width:768px) and (max-width:1024px){
+    .header-1{
+        height: 70vh;
+    }
+    .header-left{
+        h1{
+        font-size: 65px;
+
+        }
+        .btn{
+            padding: 5px;
+            font-size: 20px;
+        }
+    }
+    
+}
+
+@media(max-width:480px) and (min-width:767px){
+    .header-1{
+        height: 45vh;
+    }
+    .header-left{
+        h1{
+        font-size: 40px;
+
+        }
+        .btn{
+            padding: 5px;
+            font-size: 15px;
+        }
+    }
+}
