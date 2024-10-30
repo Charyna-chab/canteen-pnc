@@ -1,0 +1,21 @@
+@mixin text-centered{
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin with-height{
+    width: 30px;
+    height: 30px;
+}
+
+@mixin footer-with-height{
+    width: 40px;
+    height: 40px;
+}
+
+
+@mixin fw-br{
+    width: 98%;
+    font-weight: bold;
+    border-radius: 5px;
+}

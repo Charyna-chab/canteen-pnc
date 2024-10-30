@@ -1,0 +1,66 @@
+.container{
+    width: 90%;
+    margin: 30px auto;
+    margin-top: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(177, 173, 173, 0.09) 0px -3px 5px;
+    
+
+
+}
+
+.content-top{
+
+    height: 250px;
+    // padding-top: 40px;
+    text-align: $text-align;
+    background-image: url("/images/home/contact/map.png");
+    // background-position: 25% 10%;
+    
+}
+
+.bg-top{
+
+    background-color: $bg-color-white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+.rgba{
+    background-color: #0000007a;
+    height: 250px;
+    padding: 40px;
+    
+}
+
+h2{
+    color: $bg-color-black;
+    font-size: x-large;
+    font-family: $font-text;
+    font-weight: bold;
+}
+#content-button1{
+    background-color: $bg-color-black;
+    color: $bg-color-white;
+    font-size: medium;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+#content-button2{
+    background-color: $bg-color-orange;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: medium;
+}
+
+
+
+
+
+
+
