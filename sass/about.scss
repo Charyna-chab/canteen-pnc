@@ -1,7 +1,7 @@
 
 
-// @import"component.contact/_variable";
-@import"component.contact/_navbar";
+@import"component.contact/_variable";
+// @import"component.contact/_navbar";
 @import"conponent-about/_variables";
 @import"conponent-about/_header";
 @import"conponent-about/_categories";
@@ -46,5 +46,76 @@ body{
 }
 
 
+
+nav{
+    background-color: $bg-color-black;
+    display: flex;
+    position: fixed;
+    z-index: 38;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.navbar1{
+    flex: 0.25;
+    background-color: $bg-color-orange;
+    text-align: $text-align;
+}
+
+img{
+    width: 100px;
+    margin: 10px;
+    background-color:$bg-color-white;
+    border-radius: 50%;
+}
+
+
+.navbar2{
+    text-align:$text-align;
+    flex: 2;
+}
+
+.list{
+    list-style: none;
+    width: 260px;
+    margin: 20px auto;
+    @include text-centered;
+    padding-right: 70px;
+    margin-top:  10px auto;
+
+}
+
+a:hover{
+    color: $bg-color-orange;
+    position: relative;
+}
+
+a{
+    color: $bg-color-white;
+    font-size: x-large;
+    font-family: $font-text;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+.search{
+    display: flex;
+    background-color: $bg-color-white;
+    width: 450px;
+    height: 40px;
+    margin: 20px auto;
+
+}
 
 

@@ -18,22 +18,15 @@
     }
 }
 .card{
-    // display: grid;
-    // grid-template-areas: 'card-1 card-1 card-1';
     display:flex;
     flex-wrap: wrap;
     gap: 20px;
     margin: 0 auto;
     margin-top: 20px;
-    .card-1{
-        grid-area: card-1;
-    }
-    .card-2{
-        grid-area: card-2;
-    }
+    
 
     .card-1, .card-2{
-        width: 50%;
+        width: 30%;
         height: 30vh;
         display: flex;
     
