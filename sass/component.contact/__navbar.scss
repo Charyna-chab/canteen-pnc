@@ -178,6 +178,14 @@ button{
         background-color:$bg-color-white;
         border-radius: 50%;
     }
-    
+}
 
+@media (min-width:320px) and (max-width:480px){
+    .navbar1{
+        display: none;
+    }
+
+    .navbar3{
+        display: none;
+    }
 }

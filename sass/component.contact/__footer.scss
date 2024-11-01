@@ -64,8 +64,9 @@ p, a{
 
 }
 
-    
-@media(min-width: 768px) and (max-width: 1024px){
+// ======================================================================> tablet 
+
+@media(min-width: 481px) and (max-width: 1024px){
     
     footer{
         text-align: center;
@@ -81,10 +82,12 @@ p, a{
 
     .footer1{
         // display: none;
+        
         margin: 0 auto;
         width: 40%;
         grid-area: footer1;
         padding: 10px;
+        margin-bottom: 20px;
 
     }
     
@@ -92,13 +95,13 @@ p, a{
         margin-top: 10px;
         grid-area: footer2;
         text-align: left;
-        border-right: 1px solid $bg-color-white;
+        // border-right: 1px solid $bg-color-white;
     }
     .footer3{
         margin-top: 10px;
         text-align: left;
         grid-area: footer3;
-        border-right: 1px solid $bg-color-white;
+        // border-right: 1px solid $bg-color-white;
 
 
     }
@@ -107,21 +110,32 @@ p, a{
         grid-area: footer4;
         text-align: left;
     }
+
+    #h3, #p{
+        // display: none;
+        color: $bg-color-orange;
+    }
+
+    .icon{
+        align-items: left;
+    }
     
 }
 
 
+// ======================================================================> MOBILE PHONE
 
-@media (min-width:320px) and (max-width:767px){
+@media (min-width:320px) and (max-width:480px){
     footer{
-        height: 115px;
         text-align: center;
         display: none;
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         grid-template-areas:  
+        'footer2'
+        'footer3'
+        'footer4'
         'footer1';
-        // 'footer2 footer3 footer4';
     }
 
 
@@ -130,30 +144,32 @@ p, a{
         margin: 0 auto;
         width: 80%;
         grid-area: footer1;
-        border-bottom: 1px solid $bg-color-white;
+        margin-bottom: 20px;
     }
     
     .footer2{
-        display: none;
-        // grid-area: footer2;
-        // text-align: left;
+        // display: none;
+        grid-area: footer2;
+        margin-right: 65px;
+        text-align: center;
         // border-right: 1px solid $bg-color-white;
     }
     .footer3{
-        display: none;
-        // text-align: left;
-        // grid-area: footer3;
+        // display: none;
+        margin-right: 65px;
+        text-align: center;
+        grid-area: footer3;
         // border-right: 1px solid $bg-color-white;
 
 
     }
     .footer4{
-        display: none;
-        // grid-area: footer4;
-        // text-align: left;
+        // display: none;
+        margin-right: 65px;
+        grid-area: footer4;
+        text-align: center;
     }
 
-    #h3{
-        color: $bg-color-orange;
-    }
+    
 }
+

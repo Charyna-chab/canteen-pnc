@@ -149,6 +149,14 @@ button {
     border-radius: 50%;
   }
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar1 {
+    display: none;
+  }
+  .navbar3 {
+    display: none;
+  }
+}
 .container {
   width: 90%;
   margin: 30px auto;
@@ -200,6 +208,56 @@ h2 {
   font-size: medium;
 }
 
+@media (min-width: 481px) and (max-width: 1024px) {
+  #content-button2, #content-button1 {
+    font-size: small;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .content-top {
+    height: 150px;
+    text-align: center;
+    background-image: url("/images/home/contact/map.png");
+  }
+  .rgba {
+    background-color: rgba(0, 0, 0, 0.4784313725);
+    height: 150px;
+    padding: 20px;
+  }
+  h2 {
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-size: medium;
+  }
+  .bg-top {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #content-button1 {
+    background-color: #000000;
+    color: #D9D9D9;
+    font-size: small;
+    width: 70%;
+    height: 20px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  #content-button2 {
+    background-color: #F3A01A;
+    height: 20px;
+    width: 70%;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: small;
+    margin-right: 10px;
+  }
+}
 .content-bottom {
   background-color: #000000;
   color: #D9D9D9;
@@ -292,6 +350,36 @@ input[type=submit] {
     width: 48%;
   }
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  input[type=text],
+  input[type=password],
+  input[type=email] {
+    width: 98%;
+    height: 40px;
+    border: none;
+    background-color: #b6b3b3;
+    margin-top: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  #Sure-name {
+    display: none;
+  }
+  #Email {
+    width: 98%;
+  }
+  #Password {
+    width: 98%;
+    margin-top: 30px;
+  }
+  #id {
+    width: 98%;
+    display: none;
+  }
+  #class {
+    width: 98%;
+  }
+}
 footer {
   margin-top: 30px;
   background-color: #000000;
@@ -349,7 +437,7 @@ p, a {
   align-items: center;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 1024px) {
   footer {
     text-align: center;
     display: none;
@@ -362,50 +450,57 @@ p, a {
     width: 40%;
     grid-area: footer1;
     padding: 10px;
+    margin-bottom: 20px;
   }
   .footer2 {
     margin-top: 10px;
     grid-area: footer2;
     text-align: left;
-    border-right: 1px solid #D9D9D9;
   }
   .footer3 {
     margin-top: 10px;
     text-align: left;
     grid-area: footer3;
-    border-right: 1px solid #D9D9D9;
   }
   .footer4 {
     margin-top: 10px;
     grid-area: footer4;
     text-align: left;
   }
+  #h3, #p {
+    color: #F3A01A;
+  }
+  .icon {
+    align-items: left;
+  }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 480px) {
   footer {
-    height: 115px;
     text-align: center;
     display: none;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "footer1";
+    grid-template-areas: "footer2" "footer3" "footer4" "footer1";
   }
   .footer1 {
     margin: 0 auto;
     width: 80%;
     grid-area: footer1;
-    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 20px;
   }
   .footer2 {
-    display: none;
+    grid-area: footer2;
+    margin-right: 65px;
+    text-align: center;
   }
   .footer3 {
-    display: none;
+    margin-right: 65px;
+    text-align: center;
+    grid-area: footer3;
   }
   .footer4 {
-    display: none;
-  }
-  #h3 {
-    color: #F3A01A;
+    margin-right: 65px;
+    grid-area: footer4;
+    text-align: center;
   }
 }/*# sourceMappingURL=contact.css.map */
