@@ -12,7 +12,7 @@ nav {
   width: 100%;
 }
 
-.card {
+.car {
   display: flex;
   cursor: pointer;
   justify-content: center;
@@ -88,7 +88,7 @@ button {
   align-items: center;
 }
 
-.card {
+.car {
   background-color: #D9D9D9;
   width: 30px;
   height: 30px;
