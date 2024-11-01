@@ -292,9 +292,6 @@ body {
     width: 850px;
     border-radius: 20px;
   }
-  .main-about .info-left {
-    background: none;
-  }
   .main-about .info-left h2 {
     margin-left: 25px;
   }
