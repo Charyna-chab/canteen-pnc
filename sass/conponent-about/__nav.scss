@@ -1,4 +1,4 @@
-@import"__mixin-group";
+@import"_mixin-group";
 
 
 body{
@@ -178,83 +178,14 @@ button{
         background-color:$bg-color-white;
         border-radius: 50%;
     }
-<<<<<<< HEAD
-=======
 }
 
-
-// ==========================================================> mobile phone
 @media (min-width:320px) and (max-width:480px){
-    nav{
-        height: 60px;
-        margin-top: 0px;
-    }
-
-    img{
-        width: 50px;
-        margin: 5px;
-        background-color:$bg-color-white;
-        border-radius: 50%;
-    }
-    
-
-    .navbar2{
-        text-align:$text-align;
-        width: 100%;
-        flex: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .list{
-        // list-style: none;
-        width: 50%;
-        @include text-centered;
-        
-        // padding-right: 70px;
-    
-    }
-
-    a{
-        color: $bg-color-white;
-        font-size: x-large;
-        font-family: $font-text;
-        text-decoration: none;
-    }
-
-    .list a{
-        border: 0px solid $bg-color-orange;
-        margin-left: 10px;
-        padding: 5px 5px;
-        transition: 0.9s;
-
-    }
-    
-
-    .list a:hover{
-        background-color: orange;
-        color: $bg-color-black;
-    }
-    
-
-    .search{
-
+    .navbar1{
         display: none;
-    }
-    
-    
-    
-    button{
-        background-color: $bg-color-orange;
-        width: 30%;
-        border: $border-none;
-        cursor: pointer;
-    
     }
 
     .navbar3{
         display: none;
     }
->>>>>>> contact
 }
