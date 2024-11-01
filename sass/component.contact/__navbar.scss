@@ -15,7 +15,7 @@ nav{
     width: 100%;
 }
 
-.card{
+.car{
     display: flex;
     cursor: pointer;
     justify-content: center;
@@ -104,7 +104,7 @@ button{
     align-items: $text-align;
 }
 
-.card{
+.car{
     background-color: $bg-color-white;
     @include with-height;
     border-radius: $b-r;
@@ -178,6 +178,14 @@ button{
         background-color:$bg-color-white;
         border-radius: 50%;
     }
-    
+}
 
+@media (min-width:320px) and (max-width:480px){
+    .navbar1{
+        display: none;
+    }
+
+    .navbar3{
+        display: none;
+    }
 }

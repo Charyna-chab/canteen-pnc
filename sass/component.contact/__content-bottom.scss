@@ -68,6 +68,7 @@ input[type=submit]{
 }
 
 
+// ======================================================================> Tablets
 
 @media(min-width: 768px) and (max-width: 1024px){
     
@@ -107,5 +108,49 @@ input[type=submit]{
 
     #class{
         width: 48%;
+    }
+}
+
+
+
+// ======================================================================> MOBILE PHONE
+@media (min-width:320px) and (max-width:480px){
+    input[type=text],
+    input[type=password],
+    input[type=email]{
+        
+        width: 98%;
+        height: 40px;
+        border: $border-none;
+        background-color: $bg-color-input;
+
+        margin-top: 5px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    #Sure-name{
+        display: none;
+    }
+    
+    #Email{
+        width: 98%;
+        
+    }
+
+    #Password{
+        width: 98%;
+        margin-top: 30px;
+        
+    }
+    
+    #id{
+        width: 98%;
+        display: none;
+        
+    }
+
+    #class{
+        width: 98%;
     }
 }
