@@ -1,7 +1,7 @@
 
 
 @import"component.contact/_variable";
-// @import"component.contact/_navbar";
+@import"component.contact/_navbar";
 @import"conponent-about/_variables";
 @import"conponent-about/_header";
 @import"conponent-about/_categories";
@@ -24,15 +24,25 @@ body{
     text-align: center;
     // margin-top: 30px;
 }
-@media(min-width:768px) and (max-width:1024px){
-    .caption h1{
-    margin-top: 10%;
 
-    }
-}
-@media(min-width:480px) and (max-width:767px){
+@media(min-width:481px) and (max-width:767px){
     .caption h1{
         margin-top: 45%;
+        font-size: 25px;
+
+        
+        
+    }
+    .caption{
+        .canteen{
+            display: none;
+        }
+    }
+}
+
+@media(min-width:320px) and (max-width:480px){
+    .caption h1{
+        margin-top: 80%;
         font-size: 25px;
 
         
@@ -118,4 +128,65 @@ a{
 
 }
 
+@media(min-width: 768px) and (max-width: 1024px){
+    .navbar3{
+        display: none;
+    }
 
+    .navbar2{
+        text-align:$text-align;
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .list{
+        list-style: none;
+        width: 260px;
+        margin: 20px auto;
+        @include text-centered;
+        padding-right: 70px;
+        margin-top:  10px auto;
+    
+    }
+    
+    a{
+        color: $bg-color-white;
+        font-size: x-large;
+        font-family: $font-text;
+        margin: 0px 10px;
+        text-decoration: none;
+    }
+    
+    .search{
+        flex: 2;
+        background-color: $bg-color-white;
+        width: 200px;
+        height: 40px;
+        margin: 40px;
+    }
+    
+    .list a{
+        border: 0px solid $bg-color-orange;
+        padding: 11.5px 16px;
+        transition: 0.5s;
+
+    }
+    
+    .list a:hover{
+        background-color: orange;
+        color: $bg-color-black;
+    }
+    
+    nav{
+        height: 90px;
+    }
+
+    img{
+        width: 80px;
+        margin: 5px;
+        background-color:$bg-color-white;
+        border-radius: 50%;
+    }
+}

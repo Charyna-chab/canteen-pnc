@@ -53,14 +53,14 @@ header{
     
 }
 // Responsive Tablet
-@media(min-width:768px) and (max-width:1024px){
+@media(min-width:481px) and (max-width:1024px){
     header{
         height: 70vh;
         // margin-top:10%;
         margin-bottom: -5%;
     }
     .header-1{
-        height: 70vh;
+        height: 30vh;
     }
     .header-left{
         h1{
@@ -78,13 +78,13 @@ header{
 
 
 // Responesive Mobile middle
-@media(min-width:480px) and (max-width:767px){
+@media(min-width:320px) and (max-width:480px){
     .header-1{
-        height: 40vh;
+        height: 30vh;
     }
     .header-left{
         h1{
-            font-size: 40px;
+            font-size: 35px;
         }
         .btn{
             padding: 5px;
@@ -93,10 +93,3 @@ header{
     }
 }
 
-// Responsive Mobile Small
-@media(min-width:320px) and (max-width:479px){
-    header{
-        background-size: 100%;
-        width: 100%;
-    }
-}
