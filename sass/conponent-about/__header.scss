@@ -51,8 +51,12 @@ header{
     }
     
 }
-
+// Responsive Tablet
 @media(min-width:768px) and (max-width:1024px){
+    header{
+        height: 70vh;
+        margin-bottom: -5%;
+    }
     .header-1{
         height: 70vh;
     }
@@ -69,18 +73,28 @@ header{
     
 }
 
-@media(max-width:480px) and (min-width:767px){
+
+
+// Responesive Mobile middle
+@media(min-width:480px) and (max-width:767px){
     .header-1{
-        height: 45vh;
+        height: 40vh;
     }
     .header-left{
         h1{
-        font-size: 40px;
-
+            font-size: 40px;
         }
         .btn{
             padding: 5px;
             font-size: 15px;
         }
+    }
+}
+
+// Responsive Mobile Small
+@media(min-width:320px) and (max-width:479px){
+    header{
+        background-size: 100%;
+        width: 100%;
     }
 }
