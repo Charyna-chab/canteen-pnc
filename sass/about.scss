@@ -1,5 +1,7 @@
 
 
+// @import"component.contact/_variable";
+@import"component.contact/_navbar";
 @import"conponent-about/_variables";
 @import"conponent-about/_header";
 @import"conponent-about/_categories";
@@ -8,10 +10,12 @@
 @import"conponent-about/_drinks";
 @import"conponent-about/_desserts";
 @import"conponent-about/_table-food";
+@import"component.contact/_footer";
 
-*{
-    margin: 0;
-    padding: 0;
+
+body{
+    margin: 0 auto;
+    // padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
