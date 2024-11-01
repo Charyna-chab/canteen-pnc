@@ -1,6 +1,6 @@
 .mani-food{
     width: 66%;
-    padding: 30px;
+    // padding: 30px;
     background-color: $bg-card-and-cartgories;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
@@ -10,7 +10,7 @@
 
     tr,td,th{
         border: none;
-        padding: 5px;
+        // padding: 5px;
     }
     
 }
@@ -24,11 +24,17 @@ span{
 }
 @media(min-width:768px) and (max-width:1024px){
     .mani-food{
+        margin-top: 5%;
         width: 100%;
         padding: 20px;
 
-        th{
-            padding: 5px;
-        }
+        
     }
+}
+
+@media(min-width:480px) and (max-width:767px){
+    .mani-food{
+        display: none;
+    }
+    
 }

@@ -6,7 +6,7 @@
 }
 .card-dessert{
     width: 23.5%;
-    height: 50vh;
+    height: 65vh;
     margin-top: 20px;
     border-radius: 20px;
     background-color: $bg-dessert;
@@ -35,7 +35,7 @@
 
 
 .meaning-dessert h3{
-    margin-top: 20px;
+    // margin-top: 20px;
     color: $text-button;
     font-size: 25px;
 }
@@ -56,4 +56,20 @@
         }
     }
 
+}
+
+@media(min-width:480px) and (max-width:767px){
+    .dessert{
+        display: flex;
+        justify-content: center;
+    }
+    .card-dessert{
+        width: 75%;
+        height: 66vh;
+
+        img{
+            width: 50%;
+            height: 34vh;
+        }
+    }
 }
