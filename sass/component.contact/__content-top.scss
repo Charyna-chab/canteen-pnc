@@ -68,6 +68,9 @@ h2{
 
 // ======================================================================> MOBILE PHONE
 @media (min-width:320px) and (max-width:480px){
+    .container{
+        margin-top: 80px;
+    }
     .content-top{
 
         height: 150px;
