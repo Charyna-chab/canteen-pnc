@@ -4,7 +4,7 @@
 
     h2{
         color: $text-color;
-        width: 10%;
+        width: 15%;
         padding: 10px;
         margin-top: 20px;
         text-align: center;
@@ -61,6 +61,10 @@
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
+    .card-2:hover{
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
 
     
     
@@ -75,6 +79,11 @@
     .card{
         .card-1{
             width: 48%;
+            height: 20vh;
+
+            .image img{
+                height: 20vh;
+            }
 
         }
         .card-2{
@@ -82,4 +91,39 @@
         }
         
     }
+}
+@media(min-width:480px) and (max-width:767px){
+    .contant{
+
+        h2{
+            width: 25%;
+            padding: 5px;
+            font-size: 15px;
+            margin: 0 auto;
+            margin-top: 20px;
+            
+        }
+        
+        .card{
+            .card-1, .card-2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 47%;
+                height: 60vh;
+
+                .image img{
+                    width: 100%;
+                    height: 35vh;
+
+                }
+            }
+
+            .card-2{
+                display: none;
+            }
+        }
+    }
+    
 }

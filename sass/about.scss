@@ -8,6 +8,7 @@
 @import"conponent-about/_drinks";
 @import"conponent-about/_desserts";
 @import"conponent-about/_table-food";
+
 *{
     margin: 0;
     padding: 0;
@@ -17,9 +18,28 @@
 
 .caption h1{
     text-align: center;
-    margin-top: 30px;
+    // margin-top: 30px;
 }
+@media(min-width:768px) and (max-width:1024px){
+    .caption h1{
+    margin-top: 10%;
 
+    }
+}
+@media(min-width:480px) and (max-width:767px){
+    .caption h1{
+        margin-top: 45%;
+        font-size: 25px;
+
+        
+        
+    }
+    .caption{
+        .canteen{
+            display: none;
+        }
+    }
+}
 
 
 
