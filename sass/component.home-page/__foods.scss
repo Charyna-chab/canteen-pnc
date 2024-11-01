@@ -10,6 +10,9 @@
         position: relative;
         width: max-content;
     }
+    hr{
+        margin-top: 20px;
+    }
     .h2-feature:after{
         content: "";
         position: absolute;
@@ -198,6 +201,8 @@
 
 @media(min-width:769px) and (max-width:1024px){
     .content-1{
+        background-size: 100%;
+        background-repeat: no-repeat;
         .left{
             button{
                 padding: 15px 100px;
@@ -216,10 +221,12 @@
             }
         }
         .right img{
-            width: 400px;
+            width: 600px;
         }
     }
     .middle-content{
+        background-size: 100%;
+        background-repeat: no-repeat;
         .right-middle{
             button{
                 padding: 15px 100px;

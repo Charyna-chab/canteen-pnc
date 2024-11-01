@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,10 +11,12 @@ body {
 
 .main-header {
     background-image: url("/images/home_page-images/home-bg.png");
-    background-size: 100%;
+    background-size: cover;
+    width: 100%;
     color: white;
     justify-content: space-between;
     background-repeat: no-repeat;
+    background-position: center;
 
 }
 
@@ -82,11 +88,14 @@ body {
 
 @media(min-width:769px) and (max-width:1024px) {
     .main-header {
+        background-size: 100%;
+        background-repeat: no-repeat;
         margin: 0 auto;
         display: flex;
     }
 
     .img-right1 img {
+        background-repeat: no-repeat;
         margin-top: 0;
         margin-left: 350px;
         width: 350px;
@@ -97,6 +106,7 @@ body {
         flex-wrap: wrap;
 
         .header-content {
+            width: 100%;
             padding-top: 0;
             padding-bottom: 0;
             margin-bottom: 0;
@@ -160,4 +170,43 @@ body {
 }
 
 // Responsive for mobile screen
+@media(max-width:480px){
+    .main-header {
+        background-size: center;
+        width: 100%;
+        background-position: cover;
+        background-repeat: no-repeat;
 
+    }
+
+
+    .img-right1 img {
+        display: none;
+
+    }
+
+    .header-content {
+        margin: 0 auto;
+        width: 100%;
+
+        h1 {
+            font-family: "Bayon", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 10vh;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 3vh;
+        }
+
+        button {
+            background-color: white;
+            padding: 5px 50px;
+            font-size: 3vh;
+            margin-bottom: 10px;
+        }
+
+    }
+}
