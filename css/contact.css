@@ -253,12 +253,15 @@ h2 {
   font-size: medium;
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   #content-button2, #content-button1 {
     font-size: small;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    margin-top: 10px;
+  }
   .content-top {
     height: 150px;
     text-align: center;
