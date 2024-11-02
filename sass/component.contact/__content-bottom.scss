@@ -37,13 +37,17 @@ input[type=email]{
 
 input[type=email]:hover{
     background-color: $bg-color-white;
-    transform: translateY(20px);
+    transform: translateY(-3px);
 }
 input[type=password]:hover{
     background-color: $bg-color-white;
+    transform: translateY(-3px);
+
 }
 input[type=text]:hover{
     background-color: $bg-color-white;
+    transform: translateY(-3px);
+
 }
     
 
@@ -69,6 +73,7 @@ input[type=text-fb]{
     border: $border-none;
     margin-top: 5px;
     margin-bottom: 20px;
+    transform: translateY(5px);
     
 }
 
@@ -88,6 +93,7 @@ input[type=submit]{
 
 input[type=submit]:hover{
     width: 98%;
+    transform: translateY(-3px);
     background-color: $bg-color-orange;
 }
 
