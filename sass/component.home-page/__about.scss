@@ -87,10 +87,16 @@
 // Responsive for tablet---->
 
 @media(min-width:769px) and (max-width:1024px){
-
+    .main-about{
+        .h2-about{
+            font-size: 5vh;
+        }
+    }
     .about-content{
+        margin-top: 20px;
         flex-direction: row-reverse;
         background-color: #F3A01A;
+        height: 350px;
         width: 95%;
         border-radius: 10px;
         padding: 20px;
@@ -99,23 +105,22 @@
     }
     .info-left{
         background-color: none;
-        margin-left: 50px;
-        width: 600px;
+        width: 500px;
+        margin-right: 190px;
         h2{
-            font-size: 7vh;
-            margin-top: 0;
-            margin-right: 50px;
+            font-size: 3.5vh;
+            margin-left: 70px;
+            width: 500px;
         }
 
         p{
-            text-align: start;
-            font-size: 5vh;
+            font-size: 2.7vh;
+            height: 200px;
+            width: 680px;
         }
     }
     .logo-right img{
-        width: 270px;
-        margin-right: 50px;
-        margin-left: 50px;
+        width: 320px;
     }
 }  
 

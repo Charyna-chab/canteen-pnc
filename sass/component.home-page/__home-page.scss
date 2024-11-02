@@ -98,11 +98,12 @@ body {
         background-repeat: no-repeat;
         margin-top: 0;
         margin-left: 350px;
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
     }
 
     .header {
+        display: flex;
         flex-wrap: wrap;
 
         .header-content {
@@ -113,6 +114,9 @@ body {
             margin: 0 auto;
             justify-content: center;
             align-items: center;
+            .h1{
+                font-size: 8vh;
+            }
 
             .button {
                 display: none;
