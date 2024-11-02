@@ -32,10 +32,12 @@ input[type=email]{
     border-radius: 5px;
     transition: 1s;
     cursor: pointer;
+    
 }
 
 input[type=email]:hover{
     background-color: $bg-color-white;
+    transform: translateY(20px);
 }
 input[type=password]:hover{
     background-color: $bg-color-white;
