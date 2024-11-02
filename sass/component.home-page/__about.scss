@@ -89,7 +89,7 @@
 @media(min-width:769px) and (max-width:1024px){
     .main-about{
         .h2-about{
-            font-size: 5vh;
+            font-size: 4vh;
         }
     }
     .about-content{
@@ -106,7 +106,7 @@
     .info-left{
         background-color: none;
         width: 500px;
-        margin-right: 190px;
+        margin-right: 225px;
         h2{
             font-size: 3.5vh;
             margin-left: 70px;
@@ -114,13 +114,14 @@
         }
 
         p{
-            font-size: 2.7vh;
+            font-size: 2.8vh;
+            text-align: justify;
             height: 200px;
-            width: 680px;
+            width: 710px;
         }
     }
     .logo-right img{
-        width: 320px;
+        display: none;
     }
 }  
 

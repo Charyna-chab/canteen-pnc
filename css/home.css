@@ -84,7 +84,7 @@ body {
   .img-right1 img {
     background-repeat: no-repeat;
     margin-top: 0;
-    margin-left: 350px;
+    margin-left: 300px;
     width: 250px;
     height: 250px;
   }
@@ -102,7 +102,7 @@ body {
     align-items: center;
   }
   .header .header-content .h1 {
-    font-size: 8vh;
+    font-size: 7vh;
   }
   .header .header-content .button {
     display: none;
@@ -259,7 +259,7 @@ body {
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .main-about .h2-about {
-    font-size: 5vh;
+    font-size: 4vh;
   }
   .about-content {
     margin-top: 20px;
@@ -273,7 +273,7 @@ body {
   .info-left {
     background-color: none;
     width: 500px;
-    margin-right: 190px;
+    margin-right: 225px;
   }
   .info-left h2 {
     font-size: 3.5vh;
@@ -281,12 +281,13 @@ body {
     width: 500px;
   }
   .info-left p {
-    font-size: 2.7vh;
+    font-size: 2.8vh;
+    text-align: justify;
     height: 200px;
-    width: 680px;
+    width: 710px;
   }
   .logo-right img {
-    width: 320px;
+    display: none;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -539,19 +540,47 @@ body {
     padding: 10px 90px;
   }
   .content-1 .left h2 {
-    font-size: 5vh;
+    font-size: 4.8vh;
   }
   .content-1 .left h2 span {
-    font-size: 2vh;
+    display: none;
   }
   .content-1 .left h3 {
-    font-size: 3.5vh;
-  }
-  .content-1 .left p {
     font-size: 2.5vh;
   }
+  .content-1 .left p {
+    font-size: 2vh;
+  }
   .content-1 .right img {
-    width: 600px;
+    width: 480px;
+  }
+  .middle-content {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .middle-content .left-middle img {
+    margin-top: 15px;
+    width: 450px;
+  }
+  .middle-content .right-middle {
+    width: 300px;
+    margin-right: 0px;
+  }
+  .middle-content .right-middle h2 {
+    font-size: 4.5vh;
+  }
+  .middle-content .right-middle h2 span {
+    display: none;
+  }
+  .middle-content .right-middle h3 {
+    font-size: 2vh;
+  }
+  .middle-content .right-middle .button {
+    font-size: 1vh;
+    padding: 10px 90px;
+  }
+  .middle-content .right-middle p {
+    font-size: 2.5vh;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
