@@ -657,11 +657,11 @@ span {
   }
   .card-dessert {
     width: 45%;
-    height: 35vh;
+    height: 30vh;
   }
   .card-dessert img {
     width: 50%;
-    height: 16vh;
+    height: 15vh;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
@@ -860,7 +860,6 @@ p, a {
   border-radius: 50%;
   display: flex;
   margin: 5px;
-  cursor: pointer;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -901,6 +900,10 @@ p, a {
   }
   .icon {
     align-items: left;
+    transition: 1s;
+  }
+  .icon:hover {
+    transform: translateY(-3px);
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
