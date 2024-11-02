@@ -88,12 +88,13 @@
             font-size: 3vh;
             color: white;
             background-color: #F3A01A;
-            padding: 7px 200px;
+            padding: 7px 0;
             margin-top: 15px;
             text-align: center;
             border-radius: 6px;
             outline: none;
             border: none;
+            width: 100%;
             transition: background 0.3s;
             cursor: pointer;
 
@@ -106,6 +107,7 @@
     .right img{
         width: 600px;
         transition: 0.5s;
+        border-radius: 0;
     }
     .right img:hover{
         transform: translateY(-5px);
@@ -124,7 +126,9 @@
 
     .left-middle img{
         width: 600px;
+        border-radius: 0;
         transition: 0.5s;
+        background: none;
     }
     .left-middle img:hover{
         transform: translateY(-5px);
@@ -176,7 +180,7 @@
             font-size: 3vh;
             color: white;
             background-color: #F3A01A;
-            padding: 7px 200px;
+            padding: 7px 0;
             margin-top: 15px;
             text-align: center;
             border-radius: 6px;
@@ -184,6 +188,8 @@
             border: none;
             transition: background 0.3s;
             cursor: pointer;
+            width: 90%;
+            margin-right: -30px;
 
 
         }
@@ -283,7 +289,7 @@
         width: 820px;
         .left{
             .button{
-                padding: 15px 50px;
+                padding: 15px;
                 border-radius: 30px;
                 font-size: 3.5vh;
             }
@@ -302,9 +308,9 @@
         .right-middle{
             margin-right: 20px;
             .button{
-                padding: 15px 50px;
-                border-radius: 30px;
-                font-size: 3.5vh;
+                // padding: 15px;
+                // border-radius: 30px;
+                // font-size: 3.5vh;
                 margin-left: 60px;
             }
 
@@ -338,7 +344,7 @@
         background-color: white;
         display: flex;
         flex-wrap: wrap;
-        width: 350px;
+        width: 360px;
         flex-direction: column-reverse;
         .left{
             h2, h3, span{
@@ -346,10 +352,10 @@
             }
 
             .button{
-                padding: 5px 15px;
+                padding: 5px;
                 border-radius: 5px;
                 font-size: 2vh;
-                margin-right: 30px;
+                // margin-right: 30px;
             }
 
 
@@ -370,8 +376,8 @@
         background-color: white;
         display: flex;
         flex-wrap: wrap;
-        width: 350px;
-        padding-right: 10px;
+        width: 340px;
+        margin-left: 10px;
         .right-middle{
             h2, h3, span{
                 display: none;
@@ -380,7 +386,7 @@
                 padding: 5px 15px;
                 border-radius: 5px;
                 font-size: 2vh;
-                margin-left: 90px;
+                width: 350px;
             }
  
             p{

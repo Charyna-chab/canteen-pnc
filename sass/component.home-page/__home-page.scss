@@ -1,4 +1,4 @@
-*{
+body{
     margin: 0;
     padding: 0;
 }
@@ -14,6 +14,7 @@ body {
     background-size: cover;
     width: 100%;
     color: white;
+    margin-top: 8%;
     justify-content: space-between;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,6 +31,7 @@ body {
     text-align: center;
     padding-top: 250px;
     padding-left: 20px;
+    margin-top: -10%;
     cursor: pointer;
 
     .h1 {
@@ -56,7 +58,7 @@ body {
         background-color: whitesmoke;
         color: black;
         margin-top: 10px;
-        padding: 5px 150px;
+        padding: 5px 0;
         border-radius: 50px;
         border: none;
         transition: background 0.3s;
@@ -81,6 +83,7 @@ body {
     width: 400px;
     height: 400px;
     cursor: pointer;
+    background: none;
 
 }
 
@@ -129,9 +132,12 @@ body {
 // Responsive for Tablet screen
 
 @media(min-width:481px) and (max-width:768px) {
+    
     .main-header {
         background-size: 100%;
         width: 888px;
+        // margin-top: 100%;
+
         background-repeat: no-repeat;
 
     }
@@ -143,14 +149,13 @@ body {
     }
 
     .header-content {
-        margin: 0 auto;
         width: 100%;
 
         .h1 {
             font-family: "Bayon", sans-serif;
             font-weight: 300;
             font-style: normal;
-            font-size: 15vh;
+            font-size: 15px;
             margin-bottom: 0;
             padding-bottom: 0;
         }
@@ -192,6 +197,7 @@ body {
     .header-content {
         margin: 0 auto;
         width: 100%;
+        margin-bottom: 50%;
 
         .h1 {
             font-family: "Bayon", sans-serif;
@@ -207,7 +213,7 @@ body {
 
         .button {
             background-color: white;
-            padding: 5px 50px;
+            padding: 5px ;
             font-size: 3vh;
             margin-bottom: 10px;
         }
