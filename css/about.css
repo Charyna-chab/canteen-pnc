@@ -48,6 +48,17 @@ img {
   margin-top: 10px auto;
 }
 
+.list a {
+  border: 0px solid #F3A01A;
+  padding: 3px 16px;
+  transition: 0.5s;
+}
+
+.list a:hover {
+  background-color: orange;
+  color: #000000;
+}
+
 a:hover {
   color: #F3A01A;
   position: relative;
@@ -206,7 +217,7 @@ header {
   background-image: url(/images/about/bg.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  margin-top: 100px;
+  margin-top: 9%;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -1002,7 +1013,7 @@ a:hover {
 
 a {
   color: #D9D9D9;
-  font-size: x-large;
+  font-size: 16px;
   font-family: sans-serif;
   margin: 0px 20px;
   text-decoration: none;
@@ -1038,7 +1049,7 @@ a {
   }
   a {
     color: #D9D9D9;
-    font-size: x-large;
+    font-size: 15px;
     font-family: sans-serif;
     margin: 0px 10px;
     text-decoration: none;
@@ -1067,5 +1078,58 @@ a {
     margin: 5px;
     background-color: #D9D9D9;
     border-radius: 50%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  nav {
+    height: 60px;
+    margin-top: 0px;
+  }
+  img {
+    width: 50px;
+    margin: 5px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+  }
+  .navbar2 {
+    text-align: center;
+    width: 100%;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  a {
+    color: #D9D9D9;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+  .list a {
+    border: 0px solid #F3A01A;
+    margin-left: 10px;
+    padding: 5px 5px;
+    transition: 0.9s;
+  }
+  .list a:hover {
+    background-color: orange;
+    color: #000000;
+  }
+  .search {
+    display: none;
+  }
+  button {
+    background-color: #F3A01A;
+    width: 30%;
+    border: none;
+    cursor: pointer;
+  }
+  .navbar3 {
+    display: none;
   }
 }/*# sourceMappingURL=about.css.map */
