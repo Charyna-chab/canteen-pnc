@@ -56,6 +56,18 @@ img{
 
 }
 
+.list a{
+    border: 0px solid $bg-color-orange;
+    padding: 3px 16px;
+    transition: 0.5s;
+
+}
+
+.list a:hover{
+    background-color: orange;
+    color: $bg-color-black;
+}
+
 a:hover{
     color: $bg-color-orange;
     position: relative;
@@ -92,6 +104,8 @@ button{
     cursor: pointer;
 
 }
+
+
 
 // button:hover{
 //     color: $bg-color-white;
