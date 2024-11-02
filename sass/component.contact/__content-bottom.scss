@@ -1,3 +1,5 @@
+// 
+
 @import"_mixin-group";
 
 
@@ -25,11 +27,29 @@ input[type=email]{
     height: 40px;
     border: $border-none;
     background-color: $bg-color-input;
-
     margin-top: 5px;
     font-weight: bold;
     border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+    
 }
+
+input[type=email]:hover{
+    background-color: $bg-color-white;
+    transform: translateY(-3px);
+}
+input[type=password]:hover{
+    background-color: $bg-color-white;
+    transform: translateY(-3px);
+
+}
+input[type=text]:hover{
+    background-color: $bg-color-white;
+    transform: translateY(-3px);
+
+}
+    
 
 .input-text{
     width: 90%;
@@ -53,11 +73,13 @@ input[type=text-fb]{
     border: $border-none;
     margin-top: 5px;
     margin-bottom: 20px;
+    transform: translateY(5px);
     
 }
 
 
 input[type=submit]{
+    
     @include fw-br;
     height: 40px;
     border: $border-none;
@@ -65,9 +87,17 @@ input[type=submit]{
     margin-top: 10px;
     margin-bottom: 30px;
     cursor: pointer;
+    transition: 1s;
 }
 
 
+input[type=submit]:hover{
+    width: 98%;
+    transform: translateY(-3px);
+    background-color: $bg-color-orange;
+}
+
+// ======================================================================> Tablets
 
 @media(min-width: 768px) and (max-width: 1024px){
     
@@ -107,5 +137,49 @@ input[type=submit]{
 
     #class{
         width: 48%;
+    }
+}
+
+
+
+// ======================================================================> MOBILE PHONE
+@media (min-width:320px) and (max-width:480px){
+    input[type=text],
+    input[type=password],
+    input[type=email]{
+        
+        width: 98%;
+        height: 40px;
+        border: $border-none;
+        background-color: $bg-color-input;
+
+        margin-top: 5px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    #Sure-name{
+        display: none;
+    }
+    
+    #Email{
+        width: 98%;
+        
+    }
+
+    #Password{
+        width: 98%;
+        margin-top: 30px;
+        
+    }
+    
+    #id{
+        width: 98%;
+        display: none;
+        
+    }
+
+    #class{
+        width: 98%;
     }
 }

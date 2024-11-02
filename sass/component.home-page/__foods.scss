@@ -81,7 +81,7 @@
             padding: 0;
             margin: 0;
         }
-        button{
+        .button{
             font-family: "ADLaM Display", system-ui;
             font-weight: 400;
             font-style: normal;
@@ -98,7 +98,7 @@
             cursor: pointer;
 
         }
-        button:hover{
+        .button:hover{
             background-color: rgb(27, 78, 25);
         }
 
@@ -169,7 +169,7 @@
             padding: 0;
             margin: 0;
         }
-        button{
+        .button{
             font-family: "ADLaM Display", system-ui;
             font-weight: 400;
             font-style: normal;
@@ -187,7 +187,7 @@
 
 
         }
-        button:hover{
+        .button:hover{
             background-color: rgb(27, 78, 25);
 
         }
@@ -204,49 +204,65 @@
         background-size: 100%;
         background-repeat: no-repeat;
         .left{
-            button{
-                padding: 15px 100px;
-                border-radius: 30px;
-                font-size: 3.5vh;
+            .button{
+                font-size: 1vh;
+                padding: 10px 90px;
             }
             h2{
-                font-size: 13vh;
+                font-size: 4.8vh;
+                span{
+                    display: none;
+                }
             }
             h3{
-                margin-top: 60px;
-                font-size: 8vh;
+                font-size: 2.5vh;
             }
+
             p{
-                font-size: 5vh;
+                font-size: 2vh;
             }
         }
         .right img{
-            width: 600px;
-        }
-    }
-    .middle-content{
-        background-size: 100%;
-        background-repeat: no-repeat;
-        .right-middle{
-            button{
-                padding: 15px 100px;
-                border-radius: 30px;
-                font-size: 3.5vh;
-            }
-            h2{
-                font-size: 13vh;
-            }
-            h3{
-                font-size: 8vh;
-            }
-            p{
-                font-size: 5vh;
-            }
+            width: 480px;
         }
     }
 
+    .middle-content{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        .left-middle img{
+            margin-top: 15px;
+            width: 450px;
+
+        }
+        .right-middle{
+            width: 300px;
+            margin-right: 0px;
+            h2{
+                font-size: 4.5vh;
+                span{
+                    display: none;
+                }
+            }
+            h3{
+                font-size: 2vh;
+            }
+            .button{
+                font-size: 1vh;
+                padding: 10px 90px;
+            }
+            p{
+                font-size: 2.5vh;
+            }
+
+        }
+        
+        
+
+    }
+
+}
     
-}    
 
 // For tablet screen
 @media(min-width:481px) and (max-width:768px) {
@@ -266,7 +282,7 @@
     .content-1{
         width: 820px;
         .left{
-            button{
+            .button{
                 padding: 15px 50px;
                 border-radius: 30px;
                 font-size: 3.5vh;
@@ -285,7 +301,7 @@
         width: 820px;
         .right-middle{
             margin-right: 20px;
-            button{
+            .button{
                 padding: 15px 50px;
                 border-radius: 30px;
                 font-size: 3.5vh;
@@ -302,6 +318,78 @@
         }
     }
 }    
+// For mobile screen
+@media(min-width:320px) and (max-width:480px){
+    .main-food{
+        width: 100%;
+
+        .h2-feature{
+            margin-right: 150px;
+        }
+        hr{
+            margin-top: 20px;
+            width: 370px;
+        }
+
+    }
+
+    .content-1{
+        margin-left: 10px;
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+        flex-direction: column-reverse;
+        .left{
+            h2, h3, span{
+                display: none;
+            }
+
+            .button{
+                padding: 5px 15px;
+                border-radius: 5px;
+                font-size: 2vh;
+                margin-right: 30px;
+            }
 
 
+            p{
+                display: none;
+            }
+        }
+        .right img{
+            margin-top: 10px;
+            width: 330px;
+            margin-right: 10px;
+        }
+        
 
+
+    }
+    .middle-content{
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+        padding-right: 10px;
+        .right-middle{
+            h2, h3, span{
+                display: none;
+            }
+            .button{
+                padding: 5px 15px;
+                border-radius: 5px;
+                font-size: 2vh;
+                margin-left: 90px;
+            }
+ 
+            p{
+                display: none;
+            }
+        }
+        .left-middle img{
+            width: 330px;
+
+        }
+    }
+}    

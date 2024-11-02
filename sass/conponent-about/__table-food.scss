@@ -6,7 +6,7 @@
     width: 90%;
     margin: 0 auto;
     margin-top: 10px;
-    height: 50vh;
+    height: 100vh;
     background-color: $bg-card-and-cartgories;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -70,7 +70,8 @@ tbody tr:nth-child(5) td:nth-child(1){
         }
     }
     td .photo img{
-        width: 50;
+        width: 50%;
+        height: 5.5vh;
     }
     
     
@@ -138,5 +139,11 @@ tbody tr:nth-child(5) td:nth-child(1){
             width: 50%;
         }
        
+    }
+}
+
+@media(min-width:320px) and (max-width:480px){
+    .table{
+        display: none;
     }
 }
