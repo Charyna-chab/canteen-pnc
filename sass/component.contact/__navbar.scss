@@ -101,13 +101,14 @@ button{
 
 
 .navbar3{
+    // background-color: rgb(175, 5, 5);
     flex: 0.25;
     @include text-centered;
     align-items: $text-align;
 }
 
 .car{
-    background-color: $bg-color-white;
+    background-color: white;
     @include with-height;
     border-radius: $b-r;
     text-align: text-align;

@@ -89,7 +89,7 @@ button {
 }
 
 .car {
-  background-color: #D9D9D9;
+  background-color: white;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -150,8 +150,53 @@ button {
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
-  .navbar1 {
+  nav {
+    height: 60px;
+    margin-top: 0px;
+  }
+  img {
+    width: 50px;
+    margin: 5px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+  }
+  .navbar2 {
+    text-align: center;
+    width: 100%;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  a {
+    color: #D9D9D9;
+    font-size: x-large;
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+  .list a {
+    border: 0px solid #F3A01A;
+    margin-left: 10px;
+    padding: 5px 5px;
+    transition: 0.9s;
+  }
+  .list a:hover {
+    background-color: orange;
+    color: #000000;
+  }
+  .search {
     display: none;
+  }
+  button {
+    background-color: #F3A01A;
+    width: 30%;
+    border: none;
+    cursor: pointer;
   }
   .navbar3 {
     display: none;
