@@ -28,11 +28,11 @@ body {
 
 .header-content {
   text-align: center;
-  padding-top: 130px;
+  padding-top: 250px;
   padding-left: 20px;
   cursor: pointer;
 }
-.header-content h1 {
+.header-content .h1 {
   font-family: "Bayon", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -41,10 +41,10 @@ body {
   margin-bottom: 0;
   cursor: pointer;
 }
-.header-content p {
+.header-content .p {
   margin-top: 0px;
 }
-.header-content button {
+.header-content .button {
   font-family: "Bayon", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -58,7 +58,7 @@ body {
   transition: background 0.3s;
   cursor: pointer;
 }
-.header-content button:hover {
+.header-content .button:hover {
   background-color: #F3A01A;
   color: whitesmoke;
   border: none;
@@ -100,7 +100,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .header .header-content button {
+  .header .header-content .button {
     display: none;
   }
 }
@@ -117,7 +117,7 @@ body {
     margin: 0 auto;
     width: 100%;
   }
-  .header-content h1 {
+  .header-content .h1 {
     font-family: "Bayon", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -125,25 +125,25 @@ body {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  .header-content p {
+  .header-content .p {
     margin: 0;
     font-size: 5vh;
     width: 650px;
     padding: 0;
     margin: 0 auto;
   }
-  .header-content button {
+  .header-content .button {
     background-color: white;
     padding: 10px 100px;
     font-size: 5vh;
     margin-bottom: 25px;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .main-header {
-    background-size: center;
+    background-size: cover;
     width: 100%;
-    background-position: cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
   .img-right1 img {
@@ -153,17 +153,17 @@ body {
     margin: 0 auto;
     width: 100%;
   }
-  .header-content h1 {
+  .header-content .h1 {
     font-family: "Bayon", sans-serif;
     font-weight: 300;
     font-style: normal;
-    font-size: 10vh;
-    margin: 0 auto;
+    font-size: 5vh;
+    margin-right: 20px;
   }
-  .header-content p {
-    font-size: 3vh;
+  .header-content .p {
+    display: none;
   }
-  .header-content button {
+  .header-content .button {
     background-color: white;
     padding: 5px 50px;
     font-size: 3vh;
@@ -219,14 +219,22 @@ body {
 .info-left {
   margin-top: 20px;
   background-color: #F3A01A;
-  width: 100%;
+  width: 850px;
   padding: 0px 10px 10px 10px;
   border-radius: 10px;
   transition: 0.5s;
   cursor: pointer;
 }
+.info-left h2 {
+  font-size: 5vh;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 .info-left p {
-  font-size: 4vh;
+  font-size: 5vh;
+  text-align: justify;
+  width: 780px;
+  margin: 0 auto;
 }
 
 .info-left:hover {
@@ -235,6 +243,7 @@ body {
 
 .logo-right img {
   margin-top: 20px;
+  margin-right: 20px;
   width: 300px;
   transition: 0.5s;
   cursor: pointer;
@@ -299,40 +308,37 @@ body {
     margin-left: 20px;
   }
 }
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .main-about {
     width: 95%;
   }
   .main-about .h2-about {
     text-align: center;
   }
+  .main-about hr {
+    width: 95%;
+  }
   .main-about .about-content {
-    width: 100%;
-    background-size: cover;
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
+    margin-top: 10px;
+    margin-right: 25px;
+    width: 90%;
     background-color: #F3A01A;
     border-radius: 20px;
   }
   .main-about .info-left {
     margin: 0 auto;
-    background-color: #F3A01A;
+    background: none;
     width: 400px;
   }
   .main-about .info-left h2 {
-    font-size: 5vh;
-    margin: 0 auto;
+    display: none;
   }
   .main-about .info-left p {
-    text-align: justify;
-    width: 400px;
-    font-size: 4vh;
+    display: none;
   }
   .main-about .logo-right img {
     width: 200px;
-    margin: 0 auto;
+    margin-right: 80px;
     margin-top: 10px;
   }
 }
@@ -415,7 +421,7 @@ body {
   padding: 0;
   margin: 0;
 }
-.content-1 .left button {
+.content-1 .left .button {
   font-family: "ADLaM Display", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -431,7 +437,7 @@ body {
   transition: background 0.3s;
   cursor: pointer;
 }
-.content-1 .left button:hover {
+.content-1 .left .button:hover {
   background-color: rgb(27, 78, 25);
 }
 .content-1 .right img {
@@ -494,7 +500,7 @@ body {
   padding: 0;
   margin: 0;
 }
-.middle-content .right-middle button {
+.middle-content .right-middle .button {
   font-family: "ADLaM Display", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -510,7 +516,7 @@ body {
   transition: background 0.3s;
   cursor: pointer;
 }
-.middle-content .right-middle button:hover {
+.middle-content .right-middle .button:hover {
   background-color: rgb(27, 78, 25);
 }
 
@@ -541,7 +547,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
   }
-  .middle-content .right-middle button {
+  .middle-content .right-middle .button {
     padding: 15px 100px;
     border-radius: 30px;
     font-size: 3.5vh;
@@ -571,7 +577,7 @@ body {
   .content-1 {
     width: 820px;
   }
-  .content-1 .left button {
+  .content-1 .left .button {
     padding: 15px 50px;
     border-radius: 30px;
     font-size: 3.5vh;
@@ -589,7 +595,7 @@ body {
   .middle-content .right-middle {
     margin-right: 20px;
   }
-  .middle-content .right-middle button {
+  .middle-content .right-middle .button {
     padding: 15px 50px;
     border-radius: 30px;
     font-size: 3.5vh;
@@ -600,5 +606,64 @@ body {
   }
   .middle-content .left-middle img {
     width: 500px;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .main-food {
+    width: 100%;
+  }
+  .main-food .h2-feature {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .main-food hr {
+    margin-top: 20px;
+    width: 370px;
+  }
+  .content-1 {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    flex-direction: column-reverse;
+  }
+  .content-1 .left h2, .content-1 .left h3, .content-1 .left span {
+    display: none;
+  }
+  .content-1 .left .button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 2vh;
+    margin-right: 30px;
+  }
+  .content-1 .left p {
+    display: none;
+  }
+  .content-1 .right img {
+    margin-top: 10px;
+    width: 330px;
+    margin-right: 10px;
+  }
+  .middle-content {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    padding-right: 10px;
+  }
+  .middle-content .right-middle h2, .middle-content .right-middle h3, .middle-content .right-middle span {
+    display: none;
+  }
+  .middle-content .right-middle .button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 2vh;
+    margin-left: 90px;
+  }
+  .middle-content .right-middle p {
+    display: none;
+  }
+  .middle-content .left-middle img {
+    width: 330px;
   }
 }/*# sourceMappingURL=home.css.map */

@@ -81,7 +81,7 @@
             padding: 0;
             margin: 0;
         }
-        button{
+        .button{
             font-family: "ADLaM Display", system-ui;
             font-weight: 400;
             font-style: normal;
@@ -98,7 +98,7 @@
             cursor: pointer;
 
         }
-        button:hover{
+        .button:hover{
             background-color: rgb(27, 78, 25);
         }
 
@@ -169,7 +169,7 @@
             padding: 0;
             margin: 0;
         }
-        button{
+        .button{
             font-family: "ADLaM Display", system-ui;
             font-weight: 400;
             font-style: normal;
@@ -187,7 +187,7 @@
 
 
         }
-        button:hover{
+        .button:hover{
             background-color: rgb(27, 78, 25);
 
         }
@@ -228,7 +228,7 @@
         background-size: 100%;
         background-repeat: no-repeat;
         .right-middle{
-            button{
+            .button{
                 padding: 15px 100px;
                 border-radius: 30px;
                 font-size: 3.5vh;
@@ -266,7 +266,7 @@
     .content-1{
         width: 820px;
         .left{
-            button{
+            .button{
                 padding: 15px 50px;
                 border-radius: 30px;
                 font-size: 3.5vh;
@@ -285,7 +285,7 @@
         width: 820px;
         .right-middle{
             margin-right: 20px;
-            button{
+            .button{
                 padding: 15px 50px;
                 border-radius: 30px;
                 font-size: 3.5vh;
@@ -302,6 +302,79 @@
         }
     }
 }    
+// For mobile screen
+@media(min-width:320px) and (max-width:480px){
+    .main-food{
+        width: 100%;
+
+        .h2-feature{
+            text-align: center;
+            margin: 0 auto;
+        }
+        hr{
+            margin-top: 20px;
+            width: 370px;
+        }
+
+    }
+
+    .content-1{
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+        flex-direction: column-reverse;
+        .left{
+            h2, h3, span{
+                display: none;
+            }
+
+            .button{
+                padding: 5px 15px;
+                border-radius: 5px;
+                font-size: 2vh;
+                margin-right: 30px;
+            }
 
 
+            p{
+                display: none;
+            }
+        }
+        .right img{
+            margin-top: 10px;
+            width: 330px;
+            margin-right: 10px;
+        }
+        
+
+
+    }
+    .middle-content{
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+        padding-right: 10px;
+        .right-middle{
+            h2, h3, span{
+                display: none;
+            }
+            .button{
+                padding: 5px 15px;
+                border-radius: 5px;
+                font-size: 2vh;
+                margin-left: 90px;
+            }
+ 
+            p{
+                display: none;
+            }
+        }
+        .left-middle img{
+            width: 330px;
+
+        }
+    }
+}    
 
