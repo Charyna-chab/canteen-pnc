@@ -45,6 +45,7 @@ footer{
     justify-content: space-between;
 }
 h3 a{
+    // cursor: pointer;
     text-transform: uppercase;
 }
 p, a{
@@ -58,7 +59,6 @@ p, a{
     border-radius: $b-r;
     display: flex;
     margin: 5px;
-    cursor: pointer;
     // padding-left: 0px;
 
     justify-content: center;
@@ -93,7 +93,7 @@ p, a{
         margin-bottom: 20px;
 
     }
-    
+
     .footer2{
         margin-top: 10px;
         grid-area: footer2;
@@ -121,8 +121,13 @@ p, a{
 
     .icon{
         align-items: left;
+        transition: 1s;
+
     }
-    
+    .icon:hover{
+        transform: translateY(-3px);
+    }
+
 }
 
 
@@ -142,13 +147,16 @@ p, a{
     }
 
 
+
     .footer1{
         // display: none;
         margin: 0 auto;
         width: 80%;
         grid-area: footer1;
         margin-bottom: 20px;
+
     }
+
     
     .footer2{
         // display: none;
