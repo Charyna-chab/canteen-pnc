@@ -646,11 +646,11 @@ span {
   }
   .card-dessert {
     width: 45%;
-    height: 35vh;
+    height: 30vh;
   }
   .card-dessert img {
     width: 50%;
-    height: 16vh;
+    height: 15vh;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
