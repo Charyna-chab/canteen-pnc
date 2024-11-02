@@ -48,6 +48,17 @@ img {
   margin-top: 10px auto;
 }
 
+.list a {
+  border: 0px solid #F3A01A;
+  padding: 3px 16px;
+  transition: 0.5s;
+}
+
+.list a:hover {
+  background-color: orange;
+  color: #000000;
+}
+
 a:hover {
   color: #F3A01A;
   position: relative;

@@ -308,17 +308,17 @@
         width: 100%;
 
         .h2-feature{
-            text-align: center;
-            margin: 0 auto;
+            margin-right: 150px;
         }
         hr{
             margin-top: 20px;
-            width: 370px;
+            width: 385px;
         }
 
     }
 
     .content-1{
+        margin-left: 5px;
         background-color: white;
         display: flex;
         flex-wrap: wrap;
@@ -351,6 +351,7 @@
 
     }
     .middle-content{
+        margin-left: 5px;
         background-color: white;
         display: flex;
         flex-wrap: wrap;
@@ -372,7 +373,8 @@
             }
         }
         .left-middle img{
-            width: 330px;
+
+            width: 350px;
 
         }
     }
