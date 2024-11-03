@@ -774,13 +774,22 @@ tbody tr:nth-child(5) td:nth-child(1) {
     font-size: 15px;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  tr:nth-child(1) td:nth-child(2) .photo img,
+  tr:nth-child(2) td:nth-child(2) .photo img,
+  tr:nth-child(3) td:nth-child(2) .photo img,
+  tr:nth-child(4) td:nth-child(2) .photo img,
+  tr:nth-child(5) td:nth-child(2) .photo img {
+    width: 35%;
+    height: 4vh;
+  }
   tr:nth-child(1) td:nth-child(3) .photo img,
   tr:nth-child(2) td:nth-child(3) .photo img,
   tr:nth-child(3) td:nth-child(3) .photo img,
   tr:nth-child(4) td:nth-child(3) .photo img,
   tr:nth-child(5) td:nth-child(3) .photo img {
     width: 50%;
+    height: 4vh;
   }
   tr:nth-child(1) td:nth-child(4) .photo img,
   tr:nth-child(2) td:nth-child(4) .photo img,
@@ -788,6 +797,7 @@ tbody tr:nth-child(5) td:nth-child(1) {
   tr:nth-child(4) td:nth-child(4) .photo img,
   tr:nth-child(5) td:nth-child(4) .photo img {
     width: 50%;
+    height: 4vh;
   }
   tr:nth-child(1) td:nth-child(5) .photo img,
   tr:nth-child(2) td:nth-child(5) .photo img,
@@ -795,6 +805,7 @@ tbody tr:nth-child(5) td:nth-child(1) {
   tr:nth-child(4) td:nth-child(5) .photo img,
   tr:nth-child(5) td:nth-child(5) .photo img {
     width: 50%;
+    height: 4vh;
   }
   tr:nth-child(1) td:nth-child(6) .photo img,
   tr:nth-child(2) td:nth-child(6) .photo img,
@@ -802,6 +813,7 @@ tbody tr:nth-child(5) td:nth-child(1) {
   tr:nth-child(4) td:nth-child(6) .photo img,
   tr:nth-child(5) td:nth-child(6) .photo img {
     width: 50%;
+    height: 4vh;
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
