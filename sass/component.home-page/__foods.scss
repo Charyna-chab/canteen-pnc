@@ -206,22 +206,27 @@
 // Responsive for tablet---->
 
 @media(min-width:769px) and (max-width:1024px){
+    .main-food{
+        .h2-feature{
+            font-size: 4vh;
+        }
+    }
     .content-1{
         background-size: 100%;
         background-repeat: no-repeat;
         .left{
             .button{
                 font-size: 1vh;
-                padding: 10px 90px;
+                padding: 10px 80px;
             }
             h2{
-                font-size: 4.8vh;
+                font-size: 4.5vh;
                 span{
                     display: none;
                 }
             }
             h3{
-                font-size: 2.5vh;
+                font-size: 2vh;
             }
 
             p{
@@ -237,12 +242,12 @@
         background-size: 100%;
         background-repeat: no-repeat;
         .left-middle img{
-            margin-top: 15px;
-            width: 450px;
+            margin-top: 20px;
+            width: 420px;
 
         }
         .right-middle{
-            width: 300px;
+            width: 320px;
             margin-right: 0px;
             h2{
                 font-size: 4.5vh;
@@ -334,13 +339,13 @@
         }
         hr{
             margin-top: 20px;
-            width: 370px;
+            width: 90%;
+            margin-right: 50px;
         }
 
     }
 
     .content-1{
-        margin-left: 10px;
         background-color: white;
         display: flex;
         flex-wrap: wrap;
@@ -377,7 +382,6 @@
         display: flex;
         flex-wrap: wrap;
         width: 340px;
-        margin-left: 10px;
         .right-middle{
             h2, h3, span{
                 display: none;
