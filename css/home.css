@@ -165,6 +165,7 @@ body {
     font-weight: 300;
     font-style: normal;
     font-size: 5vh;
+    margin-top: 300px;
     margin-right: 20px;
   }
   .header-content .p {
@@ -172,8 +173,9 @@ body {
   }
   .header-content .button {
     background-color: white;
-    padding: 5px;
+    padding: 10px;
     font-size: 3vh;
+    width: 200px;
     margin-bottom: 10px;
   }
 }
@@ -280,7 +282,7 @@ body {
   }
   .info-left h2 {
     font-size: 3.5vh;
-    margin-left: 70px;
+    margin-left: 100px;
     width: 500px;
   }
   .info-left p {
@@ -326,10 +328,12 @@ body {
   }
   .main-about .h2-about {
     text-align: center;
-    margin-right: 90px;
+    margin-right: 130px;
+    font-size: 4vh;
   }
   .main-about hr {
     width: 95%;
+    margin-right: 55px;
   }
   .main-about .about-content {
     margin-top: 10px;
@@ -540,22 +544,25 @@ body {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .main-food .h2-feature {
+    font-size: 4vh;
+  }
   .content-1 {
     background-size: 100%;
     background-repeat: no-repeat;
   }
   .content-1 .left .button {
     font-size: 1vh;
-    padding: 10px 90px;
+    padding: 10px 80px;
   }
   .content-1 .left h2 {
-    font-size: 4.8vh;
+    font-size: 4.5vh;
   }
   .content-1 .left h2 span {
     display: none;
   }
   .content-1 .left h3 {
-    font-size: 2.5vh;
+    font-size: 2vh;
   }
   .content-1 .left p {
     font-size: 2vh;
@@ -568,11 +575,11 @@ body {
     background-repeat: no-repeat;
   }
   .middle-content .left-middle img {
-    margin-top: 15px;
-    width: 450px;
+    margin-top: 20px;
+    width: 420px;
   }
   .middle-content .right-middle {
-    width: 300px;
+    width: 320px;
     margin-right: 0px;
   }
   .middle-content .right-middle h2 {
@@ -644,10 +651,10 @@ body {
   }
   .main-food hr {
     margin-top: 20px;
-    width: 370px;
+    width: 90%;
+    margin-right: 50px;
   }
   .content-1 {
-    margin-left: 10px;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
@@ -675,7 +682,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 340px;
-    margin-left: 10px;
   }
   .middle-content .right-middle h2, .middle-content .right-middle h3, .middle-content .right-middle span {
     display: none;
