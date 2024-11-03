@@ -605,6 +605,7 @@ body {
     width: 100%;
   }
   .main-food .h2-feature {
+    font-size: 4vh;
     text-align: center;
     margin: 0 auto;
     margin-left: 330px;
@@ -649,6 +650,7 @@ body {
   }
   .main-food .h2-feature {
     margin-right: 150px;
+    font-size: 3vh;
   }
   .main-food hr {
     margin-top: 20px;
